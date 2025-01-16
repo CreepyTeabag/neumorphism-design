@@ -527,6 +527,7 @@ button {
 .wrapper {
   width: 100vw;
   height: 100vh;
+  overflow-x: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,6 +824,21 @@ button.shadow:active {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 30px;
+}
+
+.items-list-wrapper {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #6a6a6e;
+}
+
+.items-list-item {
+  padding: 10px 0;
+}
+.items-list-item + .items-list-item {
+  border-top: 2px solid rgba(119, 119, 134, 0.03);
 }
 
 .more-list {
