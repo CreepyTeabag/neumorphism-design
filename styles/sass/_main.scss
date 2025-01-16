@@ -354,3 +354,9 @@ body {
     color: #6a6a6e;
   }
 }
+
+button.shadow {
+  &:active {
+    box-shadow: none;
+  }
+}

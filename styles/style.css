@@ -703,3 +703,8 @@ body ::selection {
   border-radius: 10px;
   color: #6a6a6e;
 }
+
+button.shadow:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
