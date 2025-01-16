@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>neumorphism-design</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card shadow">
+        <h3 class="card__name">Card name</h3>
+        <div class="card__graph shadow">
+          <span class="card__graph-line inner-shadow--small"></span>
+          <span class="card__graph-line inner-shadow--small"></span>
+          <span class="card__graph-line inner-shadow--small"></span>
+          <span class="card__graph-line inner-shadow--small"></span>
+          <span class="card__graph-line inner-shadow--small"></span>
+        </div>
+
+        <div class="card__buttons-wrapper">
+          <button class="card__button shadow">🤍</button>
+          <button class="card__button shadow">⚪</button>
+          <button class="card__button shadow">➕</button>
+        </div>
+
+        <input
+          type="text"
+          class="card__input card__input--round inner-shadow"
+          placeholder="your text here"
+        />
+        <button class="card__button card__button--big shadow">OK</button>
+      </div>
+
+      <div class="card card-2 shadow">
+        <div class="card-2__top-wrapper">
+          <h3 class="card__name card__name-2">< Edit item</h3>
+
+          <label class="card__label">
+            <span> Text </span>
+            <input
+              type="text"
+              class="card__input card__input--square inner-shadow"
+              placeholder="your text here"
+            />
+          </label>
+
+          <div class="time">
+            <div class="time__row shadow">
+              <button class="time__delete">x</button>
+              <!-- <div class="time__days"> -->
+              <div class="time__days-2">
+                <span class="">dd</span>
+                <span class="active">dd</span>
+                <span class="">dd</span>
+                <span class="active">dd</span>
+                <span class="">dd</span>
+                <span class="">dd</span>
+                <span class="">dd</span>
+              </div>
+              <div class="time__hours">12:00</div>
+              <button class="time__hours-delete">x</button>
+
+              <!-- <button class="time__delete"></button> -->
+              <!-- <div class="time__days"></div> -->
+              <div class="time__hours">14:00<br />-<br />16:00</div>
+              <button class="time__hours-delete">x</button>
+            </div>
+            <div class="time__row">
+              <button class="time__add shadow">+</button>
+            </div>
+          </div>
+
+          <div class="time">
+            <div class="time__row shadow">
+              <button class="time__delete">x</button>
+              <!-- <div class="time__days"> -->
+              <div class="time__days-2">
+                <span class="">dd</span>
+                <span class="">dd</span>
+                <span class="">dd</span>
+                <span class="">dd</span>
+                <span class="">dd</span>
+                <span class="">dd</span>
+                <span class="">dd</span>
+              </div>
+              <div class="time__hours">12:00</div>
+              <button class="time__hours-delete">x</button>
+            </div>
+            <div class="time__row">
+              <button class="time__add shadow">+</button>
+            </div>
+          </div>
+
+          <button class="card__button card__button--big shadow">
+            + Add new time
+          </button>
+        </div>
+
+        <div class="card__buttons-wrapper-2">
+          <button class="card__button card__button--big shadow">SAVE</button>
+          <button
+            class="card__button card__button--big card__button--secondary card__button--danger shadow"
+          >
+            delete
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
